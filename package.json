@@ -1,0 +1,17 @@
+{
+  "name": "citybike-app",
+  "version": "1.0.0",
+  "description": "Pre-assignment for Solita Dev Academy",
+  "author": "Ildiko Makra <n4689@student.jamk.fi>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
