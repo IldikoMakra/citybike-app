@@ -1,10 +1,15 @@
 "use strict";
 
 const express = require("express");
+const dotenv = require("dotenv").config();
 
 // Constants
 const PORT = 8080;
 const HOST = "0.0.0.0";
+
+// DB Connection
+
+require("./connectDB")();
 
 // App
 const app = express();
