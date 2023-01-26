@@ -1,0 +1,7 @@
+### Get a list of stations
+
+GET http://localhost:8080/api/stations/
+
+## Get station by ID read from body
+
+GET http://localhost:8080/api/stations/Hanasaari
