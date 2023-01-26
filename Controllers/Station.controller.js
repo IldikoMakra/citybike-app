@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const Station = require("../Models/Station.model");
 
 //Get a list of all stations - paginated 5

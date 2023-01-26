@@ -1,7 +1,11 @@
 ### Get a list of stations
 
-GET http://localhost:8080/api/stations/
+//GET http://localhost:8080/api/stations/
 
-## Get station by ID read from body
+## Get station by name sent as param
 
-GET http://localhost:8080/api/stations/Hanasaari
+//GET http://localhost:8080/api/stations/Hanasaari
+
+## Get list of all journeys
+
+GET http://localhost:8080/api/journeys/
