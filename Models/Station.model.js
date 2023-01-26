@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 
-const StationSchema = new Schema({
+const StationSchema = new mongoose.Schema({
   FID: {
     type: String,
     required: true,
@@ -56,5 +55,4 @@ const StationSchema = new Schema({
   },
 });
 
-const Station = mongoose.model("product", StationSchema);
-module.exports = Station;
+module.exports = mongoose.model("Station", StationSchema);
