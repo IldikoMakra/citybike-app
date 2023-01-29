@@ -15,8 +15,8 @@ module.exports = {
         let b = {};
         b.started = a.departureStationName;
         b.ended = a.returnStationName;
-        b.distanceKm = a.distanceMeters / 1000;
-        b.durationMin = a.durationSeconds / 60;
+        b.distanceKm = (a.distanceMeters / 1000).toFixed(2);
+        b.durationMin = (a.durationSeconds / 60).toFixed(2);
         display.push(b);
       });
       res.json({

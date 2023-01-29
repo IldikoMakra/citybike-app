@@ -7,5 +7,3 @@ GET http://localhost:8080/api/stations/
 ### Get station by name
 GET http://localhost:8080/api/stations/Ympyrätalo
 
-### Get list of journeys started from a given Station
-GET http://localhost:8080/api/journeys/Tenholantie
