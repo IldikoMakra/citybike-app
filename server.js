@@ -4,8 +4,8 @@ const express = require("express");
 const dotenv = require("dotenv").config();
 const PORT = 8080;
 const HOST = "0.0.0.0";
-const stationsRouter = require("./Routes/Station.route");
-const journeysRouter = require("./Routes/Journey.route");
+const StationsRouter = require("./Routes/Station.route");
+const JourneysRouter = require("./Routes/Journey.route");
 
 // DB Connection
 require("./connectDB")();
@@ -17,8 +17,8 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Citybike API - Ildikó Makra -  v0.1.0");
 });
-app.use("/api/stations", stationsRouter);
-app.use("/api/journeys", journeysRouter);
+app.use("/api/stations", StationsRouter);
+app.use("/api/journeys", JourneysRouter);
 
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);

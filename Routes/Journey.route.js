@@ -1,10 +1,8 @@
 const express = require("express");
-const journeyRouter = express.Router();
-
+const JourneyRouter = express.Router();
 const JourneyController = require("../Controllers/Journey.controller");
 
 // Routes after HOST/api/journeys
+JourneyRouter.get("/", JourneyController.getAllJourneys);
 
-journeyRouter.get("/", JourneyController.getAllJourneys);
-
-module.exports = journeyRouter;
+module.exports = JourneyRouter;

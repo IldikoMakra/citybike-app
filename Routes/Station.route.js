@@ -1,11 +1,11 @@
 const express = require("express");
-const stationRouter = express.Router();
+const StationRouter = express.Router();
 
 const StationController = require("../Controllers/Station.controller");
 
 // Routes after HOST/api/stations
 
-stationRouter.get("/", StationController.getAllStations);
-stationRouter.get("/:name", StationController.findStationByName);
+StationRouter.get("/", StationController.getAllStations);
+StationRouter.get("/:name", StationController.findStationByName);
 
-module.exports = stationRouter;
+module.exports = StationRouter;

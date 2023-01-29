@@ -1,11 +1,11 @@
-### Get a list of stations
-
-//GET http://localhost:8080/api/stations/
-
-## Get station by name sent as param
-
-//GET http://localhost:8080/api/stations/Hanasaari
-
-## Get list of all journeys
-
+### Get list of all journeys
 GET http://localhost:8080/api/journeys/
+
+### Get a list of stations
+GET http://localhost:8080/api/stations/
+
+### Get station by name
+GET http://localhost:8080/api/stations/Ympyrätalo
+
+### Get list of journeys started from a given Station
+GET http://localhost:8080/api/journeys/Tenholantie
