@@ -10,10 +10,17 @@ module.exports = {
       const result = await Station.find({})
         .limit(limit * 1)
         .skip((page - 1) * limit);
+      const display = [];
+      result.map((a) => {
+        let b = {};
+        b.name = a.Name;
+        b.id = a.ID;
+        display.push(b);
+      });
       res.json({
         page,
         total: result.length,
-        stations: result.map((a) => a.Name),
+        data: display,
       });
     } catch (error) {
       console.log(error.message);
