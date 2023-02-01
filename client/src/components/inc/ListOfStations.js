@@ -27,20 +27,23 @@ function ListOfStations() {
   };
 
   const listComponent = (
-    <div className="list-group">
+    <div className="mx-auto">
       <h2>All Stations</h2>
       <h6>Click to see station details</h6>
-      {stations.map((station) => (
-        <button
-          onClick={() => {
-            handleClick(station);
-          }}
-          className="list-group-item"
-          key={station.id}
-        >
-          {station.name}
-        </button>
-      ))}
+
+      <div className="list-group">
+        {stations.map((station) => (
+          <button
+            onClick={() => {
+              handleClick(station);
+            }}
+            className="list-group-item"
+            key={station.id}
+          >
+            {station.name}
+          </button>
+        ))}
+      </div>
     </div>
   );
 
