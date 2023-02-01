@@ -1,6 +1,7 @@
 import Navbar from "./components/inc/Navbar";
 import Home from "./components/pages/Home";
 import Stations from "./components/pages/Stations";
+import SingleStation from "./components/inc/SingleStation";
 import Journeys from "./components/pages/Journeys";
 import NotFound from "./components/pages/NotFound";
 import { Route, Routes } from "react-router-dom";
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/stations" element={<Stations />} />
         <Route path="/journeys" element={<Journeys />} />
+        <Route path="/stations/:name" element={<SingleStation />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
