@@ -28,6 +28,8 @@ function ListOfStations() {
 
   const listComponent = (
     <div className="list-group">
+      <h2>All Stations</h2>
+      <h6>Click to see station details</h6>
       {stations.map((station) => (
         <button
           onClick={() => {

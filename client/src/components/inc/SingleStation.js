@@ -17,7 +17,7 @@ function SingleStation(props) {
     fetchData();
   }, []);
   return (
-    <div className="card w-50 mx-auto shadow p-3 mt-5 bg-body-tertiary rounded">
+    <div className="card w-100 mx-auto shadow p-3 mt-5 bg-body-tertiary rounded">
       <div className="card-body">
         <h3>Station Details</h3>
         <div className="container mt-4">
