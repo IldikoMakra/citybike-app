@@ -10,14 +10,10 @@ function ListOfStations() {
     const url = "http://localhost:8080/api/stations";
     const fetchData = async () => {
       try {
-        if (!isSelected) {
-          const response = await fetch(url);
-          const json = await response.json();
-          json.data.map((a) => console.log(a.name));
-          setStations(json.data);
-        } else {
-          //fetch the single station data to render
-        }
+        const response = await fetch(url);
+        const json = await response.json();
+        json.data.map((a) => console.log(a.name));
+        setStations(json.data);
       } catch (error) {
         console.log("error", error);
       }
@@ -46,14 +42,7 @@ function ListOfStations() {
     </div>
   );
 
-  const stationDataComponent = (
-    <div>
-      <SingleStation />
-      <a href="/stations">Back to Stations</a>
-    </div>
-  );
-
-  return isSelected ? stationDataComponent : listComponent;
+  return isSelected ? <SingleStation name={selected.name} /> : listComponent;
 }
 
 export default ListOfStations;
