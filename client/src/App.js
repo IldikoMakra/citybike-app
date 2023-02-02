@@ -1,7 +1,7 @@
 import Navbar from "./components/inc/Navbar";
 import Home from "./components/pages/Home";
 import Stations from "./components/pages/Stations";
-import SingleStation from "./components/inc/SingleStation";
+import SingleStation from "./components/SingleStation";
 import Journeys from "./components/pages/Journeys";
 import NotFound from "./components/pages/NotFound";
 import { Route, Routes } from "react-router-dom";

@@ -28,9 +28,6 @@ function ListOfStations() {
 
   const listComponent = (
     <div className="mx-auto">
-      <h2>All Stations</h2>
-      <h6>Click to see station details</h6>
-
       <div className="list-group">
         {stations.map((station) => (
           <button

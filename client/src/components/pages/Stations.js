@@ -1,14 +1,13 @@
 import React from "react";
-import ListOfStations from "../inc/ListOfStations";
+import ListOfStations from "../ListOfStations";
 
 function Stations() {
   return (
     <div className="container">
-      <div className="card w-75 mt-4 mx-auto shadow p-3">
-        <div className="card-body"></div>
+      <h2 className="text-center">All Stations</h2>
+      <h6 className="text-center">Click to see station details</h6>
 
-        <ListOfStations />
-      </div>
+      <ListOfStations />
     </div>
   );
 }
