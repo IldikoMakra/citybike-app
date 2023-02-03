@@ -1,21 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function SingleStation({ name }) {
   const [stationData, setStationData] = useState({});
 
-  useEffect(() => {
-    const url = "http://86.50.228.198/api/stations" + name;
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        setStationData(json);
-      } catch (error) {
-        console.log("error", error);
-      }
-    };
-    fetchData();
-  }, []);
   return (
     <div className="card w-100 mx-auto shadow p-3 mt-5 bg-body-tertiary rounded">
       <div className="card-body">
