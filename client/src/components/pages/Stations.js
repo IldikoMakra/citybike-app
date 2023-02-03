@@ -5,7 +5,7 @@ function Stations() {
   const [stations, setStations] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:8080/api/stations";
+    const url = "http://86.50.228.198/api/stations";
     const fetchData = async () => {
       try {
         const response = await fetch(url);

@@ -1,9 +1,10 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
-const PORT = 8080;
+require("dotenv").config();
+const PORT = process.env.PORT || 8080;
 const HOST = "0.0.0.0";
 const StationsRouter = require("./Routes/Station.route");
 const JourneysRouter = require("./Routes/Journey.route");
+const path = require("path");
 
 // DB Connection
 require("./connectDB")();
@@ -26,9 +27,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("Citybike API - Ildikó Makra -  v0.1.0");
-});
+//app.get("/", (req, res) => {res.send("Citybike API - Ildikó Makra -  v0.1.0");});
 app.use("/api/stations", StationsRouter);
 app.use("/api/journeys", JourneysRouter);
 

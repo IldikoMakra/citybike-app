@@ -4,7 +4,7 @@ function SingleStation({ name }) {
   const [stationData, setStationData] = useState({});
 
   useEffect(() => {
-    const url = "http://localhost:8080/api/stations/" + name;
+    const url = "http://86.50.228.198/api/stations" + name;
     const fetchData = async () => {
       try {
         const response = await fetch(url);
