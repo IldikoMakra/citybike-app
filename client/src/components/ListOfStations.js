@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SingleStation from "./SingleStation";
 
-function ListOfStations() {
-  const [stations, setStations] = useState([]);
+function ListOfStations({ stations }) {
   const [isSelected, setIsSelected] = useState(false);
   const [selected, setSelected] = useState();
-
-  useEffect(() => {
-    const url = "http://localhost:8080/api/stations";
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        json.data.map((a) => console.log(a.name));
-        setStations(json.data);
-      } catch (error) {
-        console.log("error", error);
-      }
-    };
-    fetchData();
-  }, []);
 
   const handleClick = (station) => {
     setSelected(station);
@@ -31,6 +15,7 @@ function ListOfStations() {
       <div className="list-group">
         {stations.map((station) => (
           <button
+            data-cy="list-button"
             onClick={() => {
               handleClick(station);
             }}

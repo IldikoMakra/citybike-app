@@ -1,0 +1,62 @@
+[
+  {
+    "started": "Ympyrätalo",
+    "ended": "Unioninkatu",
+    "distanceKm": "4.01",
+    "durationMin": "22.77"
+  },
+  {
+    "started": "Pasilan asema",
+    "ended": "Tenholantie",
+    "distanceKm": "2.28",
+    "durationMin": "8.37"
+  },
+  {
+    "started": "Cygnaeuksenkatu",
+    "ended": "Leppäsuonaukio",
+    "distanceKm": "0.72",
+    "durationMin": "2.92"
+  },
+  {
+    "started": "Westendinasema",
+    "ended": "Koivusaari (M)",
+    "distanceKm": "2.97",
+    "durationMin": "12.67"
+  },
+  {
+    "started": "Ritarikatu",
+    "ended": "Kaisaniemenpuisto",
+    "distanceKm": "4.58",
+    "durationMin": "21.80"
+  },
+  {
+    "started": "Lintulahdenkatu",
+    "ended": "Sompasaari",
+    "distanceKm": "1.01",
+    "durationMin": "3.83"
+  },
+  {
+    "started": "Mastokatu",
+    "ended": "Kaivopuisto",
+    "distanceKm": "2.42",
+    "durationMin": "9.70"
+  },
+  {
+    "started": "Erottajan aukio",
+    "ended": "Lastenlehto",
+    "distanceKm": "8.45",
+    "durationMin": "29.15"
+  },
+  {
+    "started": "Alakiventie",
+    "ended": "Puotila (M)",
+    "distanceKm": "1.36",
+    "durationMin": "12.63"
+  },
+  {
+    "started": "Munkkivuoren ostoskeskus",
+    "ended": "Huopalahdentie",
+    "distanceKm": "0.72",
+    "durationMin": "3.32"
+  }
+]

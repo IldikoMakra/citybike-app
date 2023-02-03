@@ -23,7 +23,9 @@ function SingleStation({ name }) {
         <div className="container mt-4">
           <div className="row pb-2">
             <div className="col">Station Name</div>
-            <div className="col">{stationData.name}</div>
+            <div className="col" data-cy="stationName">
+              {stationData.name}
+            </div>
           </div>
           <div className="row pb-2">
             <div className="col">Station Address</div>

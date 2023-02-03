@@ -34,6 +34,19 @@ app.get("/", (req, res) => {
 app.use("/api/stations", StationsRouter);
 app.use("/api/journeys", JourneysRouter);
 
+//Serve client
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(
+      path.resolve(__dirname, "../", "client", "build", "index.html")
+    )
+  );
+} else {
+  app.get("/", (req, res) => res.send("Please set environment to production"));
+}
+
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
 });
