@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stations" element={<Stations />} />
+        <Route path="/stations/:name" element={<SingleStation />} />
         <Route path="/journeys" element={<Journeys />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
