@@ -14,7 +14,7 @@ This is a single page web application to provide data about citibike stations an
 
 NodeJS Express, MongoDB and ReactJS
 
-Only one month data has been imported to MongoDB for the purpose of demonstration, due to the free available space size restictions on Atlas DB service.
+Only one month data has been imported to MongoDB for the purpose of demonstration, due to the free available size restictions on Atlas DB service.
 
 ## Live App
 
@@ -22,7 +22,7 @@ Demo app is served from CSC cloud.
 
 [Check out the working application from here](http://86.50.228.198/)
 
-:smile:
+:blush:
 
 ## Get Started with Development
 
@@ -103,6 +103,7 @@ npm run build
 ```
 
 Step back to the root folder, rename and set the .env file
+
 Email me to get your own DB password.
 
 ```bash
@@ -121,7 +122,7 @@ mv .envtochange .env
 
 - GET /api/journeys
 - GET /api/stations
-- GEET /api/stations/:name
+- GET /api/stations/:name
 
 ## Frontend has three React Components
 
