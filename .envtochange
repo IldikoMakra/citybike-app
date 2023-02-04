@@ -1,0 +1,6 @@
+NODE_ENV = development
+PORT = 8080
+MONGODB_URI=mongodb+srv://cluster0.prg02.mongodb.net/?retryWrites=true&w=majority
+DB_NAME=citybikedb
+DB_USER=guest1
+DB_PASS=putYourRealOne
