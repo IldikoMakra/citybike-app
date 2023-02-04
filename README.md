@@ -12,7 +12,7 @@ This is a single page web application to provide data about citibike stations an
 
 ## Technologies
 
-NodeJS Express, MongoDB and ReactJS
+NodeJS Express, MongoDB and ReactJS - Responsivity added with Bootstrap
 
 Only one month data has been imported to MongoDB for the purpose of demonstration, due to the free available size restictions on Atlas DB service.
 
