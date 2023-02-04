@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-//app.get("/", (req, res) => {res.send("Citybike API - Ildikó Makra -  v0.1.0");});
+
 app.use("/api/stations", StationsRouter);
 app.use("/api/journeys", JourneysRouter);
 
@@ -41,7 +41,9 @@ if (process.env.NODE_ENV === "production") {
     )
   );
 } else {
-  app.get("/", (req, res) => res.send("Please set environment to production"));
+  app.get("/", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "./", "api.html"))
+  );
 }
 
 app.listen(PORT, HOST, () => {

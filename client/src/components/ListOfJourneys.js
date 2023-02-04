@@ -1,23 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function ListOfJourneys() {
-  const [journeys, setJourneys] = useState([]);
-
-  useEffect(() => {
-    const url = "http://86.50.228.198/api/journeys";
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        const json = await response.json();
-        json.data.map((a) => console.log(a.started));
-        setJourneys(json.data);
-      } catch (error) {
-        console.log("error", error);
-      }
-    };
-    fetchData();
-  }, []);
-
+function ListOfJourneys({ journeys }) {
   return (
     <div className="container">
       <div className="card w-100 mt-4 mx-auto shadow p-3">
